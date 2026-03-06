@@ -1,2 +1,11 @@
-:root { color-scheme: light dark; }
-body { margin: 0; font-family: system-ui, sans-serif; }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-gray-900;
+}
+
+.badge {
+  @apply inline-block text-sm font-medium;
+}

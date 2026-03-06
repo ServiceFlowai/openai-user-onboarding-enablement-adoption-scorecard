@@ -1,19 +1,23 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
 import Dashboard from './pages/Dashboard';
-import Personas from './pages/Personas';
-import Curriculum from './pages/Curriculum';
-import Playbooks from './pages/Playbooks';
+import Courses from './pages/Courses';
+import Labs from './pages/Labs';
+import EnablementKit from './pages/EnablementKit';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/personas" element={<Personas />} />
-        <Route path="/curriculum" element={<Curriculum />} />
-        <Route path="/playbooks" element={<Playbooks />} />
-      </Routes>
+    <div className="flex">
+      <Sidebar />
+      <div className="flex-1 p-6">
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/labs" element={<Labs />} />
+          <Route path="/enablement-kit" element={<EnablementKit />} />
+        </Routes>
+      </div>
     </div>
   );
 }
