@@ -1,5 +1,5 @@
 {
-  "name": "openai-onboarding-scorecard",
+  "name": "openai-onboarding",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
@@ -17,7 +17,7 @@
     "typescript": "^4.0.0",
     "vite": "^2.0.0",
     "@vitejs/plugin-react": "^1.0.0",
-    "tailwindcss": "^3.0.0",
+    "tailwindcss": "^2.0.0",
     "postcss": "^8.0.0",
     "autoprefixer": "^10.0.0"
   }
